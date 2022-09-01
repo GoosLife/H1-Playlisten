@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace H1_Playlisten
 {
     internal class Playlist
     {
         private string name;
-
+        /// <summary>
+        /// The name of the playlist.
+        /// </summary>
         public string Name
         {
             get { return name; }
@@ -17,7 +15,9 @@ namespace H1_Playlisten
         }
 
         private LinkedList<Track> tracks;
-
+        /// <summary>
+        /// A linked list of all the tracks on the playlist.
+        /// </summary>
         public LinkedList<Track> Tracks
         {
             get { return tracks; }
@@ -26,6 +26,7 @@ namespace H1_Playlisten
         public Playlist(string name)
         {
             this.name = name;
+            tracks = new LinkedList<Track>();
         }
     }
 }

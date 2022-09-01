@@ -9,14 +9,18 @@ namespace H1_Playlisten
     internal class Track
     {
         private string songName;
-
+        /// <summary>
+        /// The songs title.
+        /// </summary>
         public string SongName
         {
             get { return songName; }
         }
 
         private string artist;
-
+        /// <summary>
+        /// The artist performing the song.
+        /// </summary>
         public string Artist
         {
             get { return artist; }
